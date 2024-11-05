@@ -23,6 +23,7 @@ const ReadPosts = (props) => {
         posts.map((post, index) => (
           <Card
             id={post.id}
+            img={post.img}
             name={post.name}
             damage={post.damage}
             ultimate={post.ultimate}

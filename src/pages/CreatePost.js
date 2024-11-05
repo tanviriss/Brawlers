@@ -4,6 +4,7 @@ import { useState } from "react";
 import { supabase } from "../client";
 const CreatePost = () => {
   const [post, setPost] = useState({
+    img: "",
     name: "",
     damage: 0,
     ultimate: "",
@@ -25,6 +26,7 @@ const CreatePost = () => {
     await supabase
       .from("Brawler")
       .insert({
+        img: post.img,
         name: post.name,
         damage: post.damage,
         ultimate: post.ultimate,
@@ -38,6 +40,10 @@ const CreatePost = () => {
   return (
     <div>
       <form>
+        <label for="img">Image URL</label> <br />
+        <input type="text" id="img" name="img" onChange={handleChange} />
+        <br />
+        <br />
         <label for="name">Name</label> <br />
         <input type="text" id="name" name="name" onChange={handleChange} />
         <br />

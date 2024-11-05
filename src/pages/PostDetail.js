@@ -31,6 +31,7 @@ const PostDetail = () => {
 
   return (
     <div className="post-detail">
+      <img src={post.img} alt={post.name} />
       <h1>{post.name}</h1>
       <p>Damage: {post.damage}</p>
       <p>Ultimate: {post.ultimate}</p>

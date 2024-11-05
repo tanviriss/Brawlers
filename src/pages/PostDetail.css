@@ -1,3 +1,5 @@
+/* PostDetail.css */
+
 .post-detail {
   display: flex;
   flex-direction: column;
@@ -6,9 +8,17 @@
   padding: 20px;
   margin: 0 auto;
   max-width: 600px;
-  background-color: #413a3a;
+  background-color: #512f2f;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post-detail img {
+  max-width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 20px;
 }
 
 .post-detail h1 {

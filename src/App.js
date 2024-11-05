@@ -11,6 +11,7 @@ const App = () => {
   const brawlers = [
     {
       id: "1",
+      img: "",
       name: "Shelly",
       damage: "300",
       ultimate: "Super Shell",
@@ -19,6 +20,7 @@ const App = () => {
     },
     {
       id: "2",
+      img: "",
       name: "Colt",
       damage: "500",
       ultimate: "Bullet Storm",
@@ -27,6 +29,7 @@ const App = () => {
     },
     {
       id: "3",
+      img: "",
       name: "Bull",
       damage: "400",
       ultimate: "Bulldozer",
@@ -35,6 +38,7 @@ const App = () => {
     },
     {
       id: "4",
+      img: "",
       name: "Jessie",
       damage: "600",
       ultimate: "Scrappy!",

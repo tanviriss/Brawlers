@@ -16,6 +16,7 @@ const Card = (props) => {
       <Link to={"edit/" + props.id} onClick={(e) => e.stopPropagation()}>
         <img className="moreButton" alt="edit button" src={more} />
       </Link>
+      <img className="img" src={props.img} alt={props.name} />
       <h2 className="name">{props.name}</h2>
       <p className="damage">{"Damage: " + props.damage}</p>
       <h3 className="ultimate">{"Ultimate: " + props.ultimate}</h3>

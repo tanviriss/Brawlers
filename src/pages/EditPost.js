@@ -8,6 +8,7 @@ const EditPost = ({ data }) => {
   const { id } = useParams();
   const [post, setPost] = useState({
     id: null,
+    img: "",
     name: "",
     damage: 0,
     ultimate: "",
@@ -29,6 +30,7 @@ const EditPost = ({ data }) => {
     await supabase
       .from("Brawler")
       .update({
+        img: post.img,
         name: post.name,
         damage: post.damage,
         ultimate: post.ultimate,
@@ -49,6 +51,17 @@ const EditPost = ({ data }) => {
   return (
     <div>
       <form>
+        <label for="img">Image URL</label>
+        <br />
+        <input
+          type="text"
+          id="img"
+          name="img"
+          value={post.img}
+          onChange={handleChange}
+        />
+        <br />
+        <br />
         <label for="name">Name</label> <br />
         <input
           type="text"
